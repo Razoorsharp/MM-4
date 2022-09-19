@@ -10,14 +10,36 @@
 <body>
     <header>
         <h1>
-
+           Welcome to the CPU and GPU tutorial. 
         </h1>
     </header>
+    <section>
+        <h2 class="selectionText">Please select the CPU or GPU to know more.             
+        </h2>
+    </section>
+    <section id='animation'>
+        <p>The GPU and CPU Guide</p>
+        <img id="caseAnimated"src="images/plucked/case.png" alt="Computer case">
+        <img id="moboAnimated" src="images/plucked/mobo.png" alt="Motherboard">
+        <a href="paginas/cpu.html" ><img src="images/plucked/ryzenAnimated.png" id="cpuAnimated" alt="Ryzen"></a>
+        <a href="paginas/gpu.html" alt="GPU"><img src="images/plucked/gpuAnimated.png" id="gpuAnimated" alt="GPU"></a>        
+    </section>
 
-    <section class="content" id="homeContent">
+    <section class="contentMain" id="homeContent">
         <div class="layout">
             <div class="cpu" id="homeCPU"></div>
+            <p> Please Enable Javascript to enjoy the full functionality of this page. 
+                <!-- The CPU is the working horse of every day tasks in a computer. It manages every click and every piece of logic the computer needs to handle. 
+                When things need calculations or images need to be sent to the GPU for display, everything is done by the CPU. 
+            If It was a football match it would be the coach and referee.   -->
+        </p>
+            <br>
             <div class="gpu" id="homeGPU"></div>
+            <p>
+                <!-- Want to have amazing 3D images, play games and play 4k video? The GPU is your goto for this task. Instead of handling tasks in batch they process it in bulk in a split second.
+                Every frame if rendered simultaniously with complex code to provide the best image quality. If the CPu can feed it fast enough from Ram. this is what makes it look good.  -->
+            </p>
+            <br>
             <div class="textcontent" id="homeTextContent"></div>
         </div>
     </section>
@@ -25,4 +47,5 @@
 
    </footer>
 </body>
+<script src="js/intro.js"></script>
 </html>

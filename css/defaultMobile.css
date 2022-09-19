@@ -1,11 +1,86 @@
-@media only screen and (min-width: 756px){
+/* @media only screen and (min-width: 756px){ */
 
 body{
     background-image:url("../images/backgrounds/bckgrndtranspng.png");
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:red;
+    position:relative;
+    height: 100vh;
+    box-sizing: border-box;
+   
 }
+header{
+    font-size: 0px;
+}
+.selectionText{
+    position: absolute;
+    top: 7%;
+    background: black;
+    color: white;
+    text-align: center;
+    width: 40vw;   
+    font-size: 2rem;
+    font-family: unset;
+
 
 }
+#animation{
+    position: relative;
+    /* margin: 0 auto; */
+    bottom:50vh;
+    Left: 0%;
+    width: 100%;
+    height:60vh;
+    /* overflow: hidden; */
+}
+#caseAnimated{
+    position: absolute;    
+    top:55vh;
+    width: 50%; 
+    Left: 50vw;  
+}
+#moboAnimated{
+    position: absolute;    
+    top:55vh;
+    width: 37%; 
+    Left: 50vw;  
+}
+#cpuAnimated{
+    position: absolute;    
+    top:63vh;
+    width: 10%; 
+    Left: 64vw;  
+}
+#cpuAnimated:hover{
+  outline: auto; 
+  border: brown solid 2rem;
+  z-index: 2;
+}
+#gpuAnimated{
+    position: absolute;    
+    top:72vh;
+    width: 30%; 
+    Left: 58vw;  
+}
+#gpuAnimated:hover{
+   outline: auto;
+   border: brown solid 2rem;
+   z-index: 2;
+}
+.contentMain{
+    position: relative;
+    width: 90vw;
+    /* height: 6rem; */
+    bottom: 0%;
+    margin: 0 auto;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    overflow: hidden;  
+    padding: 1rem; 
+}
+ 
+
+/* } */
     
