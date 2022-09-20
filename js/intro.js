@@ -47,6 +47,10 @@ window.addEventListener('load', function(){
     // Events
     runAnim();
 
+    gpu.addEventListener('click', function(e){
+        window.open('paginas/gpu.html', '_self');
+    });
+
     // 
 
 
