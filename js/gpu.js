@@ -13,24 +13,30 @@ window.addEventListener('load', function(){
     gpuPCIE = d.getElementById('gpuPCIE');
     gpuCooler = d.getElementById('gpuCooler');
     //    other 
-    gpuInfo = d.getElementById('gpuInformation')
+    gpuInfoContainer = d.getElementById('gpuInformation')
     gpuInfo = d.getElementById('gpuInfoText');
     // test
 
+    // Constructs query for all children of the map tag
     const mapItems = d.querySelector('map').children;
+    // construct put all queried results of the map tag into an array called mapArray
     const mapArray = Array.from(mapItems);
 
-    console.log(mapArray);
+    // console.log(mapArray);
     // Functions
-    for(area of mapArray){
-        
+    // for(area of mapArray){
+        for(i=0; i <= 4; i++){
+        // console.log(mapArray[i].id); // looks for all id's within the current loop. 
+        // area is now per loop defined by the ID
+        var area = d.getElementById(mapArray[i].id);
+        // add events per area  
+        console.log(tekstenGpu[i]);   
         area.addEventListener('mouseover', function(){
-            console.log(this.id);
-            let
-            
+            gpuInfo.textContent = tekstenGpu[i].txt;         
             
         });
     }
+    // } // map area for loop ends
     // events
     // d.addEventListener('mouseover', function(e){
     //     var that = this.
