@@ -103,6 +103,9 @@ header{
     margin: 0 auto;
 
 }
+#gpuOverlay{
+      
+}
 #gpuInformation{
     display: grid;
     grid-template-areas:
@@ -121,6 +124,34 @@ header{
 #gpuInfoImage{
     grid-area: image;
 }
+area{
+    display: block;
+    border: 10px solid black;
+    background-color: violet;
+}
+.cls-1 {
+    opacity: .34;
+  }
 
+  .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+    fill: #f29fc5;
+  }
+
+  .cls-2 {
+    opacity: .58;
+  }
+
+  .cls-3 {
+    opacity: .53;
+  }
+
+  .cls-4 {
+    opacity: .47;
+  }
+
+  .cls-5 {
+    opacity: .35;
+  }
+ 
     
 }
