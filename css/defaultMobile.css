@@ -99,9 +99,26 @@ header{
     GPU Page
 */
 #gpuImage{
-    width: 100vw;
+    width: 80vw;
     margin: 0 auto;
 
+}
+#gpuInformation{
+    display: grid;
+    grid-template-areas:
+    'txt txt image';    
+    gap: 10px;
+    background-color: black;
+    width: 80vw;
+    height: 20vh;
+    margin: 20% auto;
+    padding: 2px;
+}
+#gpuInfoText{
+    grid-area: txt;    
+}
+#gpuInfoImage{
+    grid-area: image;
 }
 
     
