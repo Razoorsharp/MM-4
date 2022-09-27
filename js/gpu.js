@@ -15,6 +15,7 @@ window.addEventListener('load', function(){
     // //    other 
     // gpuInfoContainer = d.getElementById('gpuInformation')
     gpuInfo = d.getElementById('gpuInfoText');
+    gpuInfoImage = d.getElementById('gpuInfoImage');
    
     // Constructs query for all children of the map tag
     const mapItems = d.querySelector('map').children;
@@ -30,7 +31,7 @@ window.addEventListener('load', function(){
         var area = d.getElementById(mapArrayItem.id); // gives an error but the code works and id does exist if you print it in the console, so keep it!
         // add events per area
         area.style= ('border:10px; background-color: black; outline: 20px;');
-        console.log(area);
+        // console.log(area);
         area.addEventListener('mouseover', function(e){
             // console.log(e.target.id) 
             // console.log(tekstenGpu[i].id);
@@ -38,13 +39,15 @@ window.addEventListener('load', function(){
                 if(e.target.id == tekst.id){ // find a matching tekst
                     gpuInfo.textContent = tekst.txt; // put that tekst in the html tab for showing. 
                     gpuImage.src = "../images/main/"+ e.target.id +".png";
+                    gpuInfoImage.innerHTML = "<img src=../images/GpuParts/"+ e.target.id +".png>";
+                    console.log(gpuInfoImage);
 
                 }
             };
         });
         area.addEventListener('mouseout', function(e){
             gpuImage.src = "../images/main/gpumain.png";
-            
+
         });
     }
 
