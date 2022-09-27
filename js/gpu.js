@@ -6,7 +6,7 @@ window.addEventListener('load', function(){
     // Existency check
 
     // image and part of image
-    // gpuImage = d.getElementById('gpuImage');
+    gpuImage = d.getElementById('gpuImage');
     // gpuChips = d.getElementById('gpuChips');
     // gpuPowersupply = d.getElementById('gpuPowersupply');
     // gpuFans = d.getElementById('gpuFan');
@@ -37,9 +37,13 @@ window.addEventListener('load', function(){
             for(tekst of tekstenGpu){ // loop through all tekst
                 if(e.target.id == tekst.id){ // find a matching tekst
                     gpuInfo.textContent = tekst.txt; // put that tekst in the html tab for showing. 
+                    gpuImage.src = "../images/main/"+ e.target.id +".png";
+
                 }
             };
-      
+        });
+        area.addEventListener('mouseout', function(e){
+            gpuImage.src = "../images/main/gpumain.png";
             
         });
     }

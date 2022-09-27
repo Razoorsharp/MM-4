@@ -4,7 +4,7 @@
 */
 
 body{
-    background-image:url("../images/backgrounds/bckgrndtranspng.png");
+    background-image:url("../images/backgrounds/techbackground.jpeg");
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,11 +101,10 @@ header{
 #gpuImage{
     width: 80vw;
     margin: 0 auto;
+    top:30%;
 
 }
-#gpuOverlay{
-      
-}
+
 #gpuInformation{
     display: grid;
     grid-template-areas:
