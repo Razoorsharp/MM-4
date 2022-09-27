@@ -16,12 +16,20 @@ window.addEventListener('load', function(){
     // gpuInfoContainer = d.getElementById('gpuInformation')
     gpuInfo = d.getElementById('gpuInfoText');
     gpuInfoImage = d.getElementById('gpuInfoImage');
+
+    // buttons
+    btnGpuChip = d.getElementById('btnGpuChip');
+    
    
     // Constructs query for all children of the map tag
     const mapItems = d.querySelector('map').children;
     // construct put all queried results of the map tag into an array called mapArray
     const mapArray = Array.from(mapItems);
 
+    const buttonItems = d.querySelector('.buttons').children;
+    // construct put all queried results of the map tag into an array called mapArray
+    const buttonArray = Array.from(buttonItems);
+    // console.log(buttonArray);
    
     // Functions
         // make a loop of all the mapArray parts
@@ -49,6 +57,22 @@ window.addEventListener('load', function(){
             gpuImage.src = "../images/main/gpumain.png";
 
         });
+    }
+
+    // button Loops. 
+
+    for(i=0; i <= buttonArray.length; i++){
+        console.log("started");
+        buttonArrayItem = buttonArray[i];
+        var button = d.getElementById(buttonArrayItem.id); // gives an error but the code works and id does exist if you print it in the console, so keep it!
+        // add events per area
+        console.log(button);
+      
+        button.addEventListener('press', function(e){
+        });
+    
+     
+       
     }
 
 });
