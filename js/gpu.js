@@ -30,10 +30,11 @@ window.addEventListener('load', function(){
     // construct put all queried results of the map tag into an array called mapArray
     const buttonArray = Array.from(buttonItems);
     // console.log(buttonArray);
-   
+ 
     // Functions
         // make a loop of all the mapArray parts
-        for(i=0; i <= mapArray.length; i++){
+       
+        for(i=0; i < mapArray.length; i++){
         // area is now per loop defined by the ID
         mapArrayItem = mapArray[i];
         var area = d.getElementById(mapArrayItem.id); // gives an error but the code works and id does exist if you print it in the console, so keep it!
@@ -57,22 +58,21 @@ window.addEventListener('load', function(){
             gpuImage.src = "../images/main/gpumain.png";
 
         });
-    }
+    
+}
 
     // button Loops. 
-
-    for(i=0; i <= buttonArray.length; i++){
+    
+    
+    for(i=0; i < buttonArray.length; i++){
         console.log("started");
         buttonArrayItem = buttonArray[i];
         var button = d.getElementById(buttonArrayItem.id); // gives an error but the code works and id does exist if you print it in the console, so keep it!
         // add events per area
-        console.log(button);
+        
       
-        button.addEventListener('press', function(e){
+        button.addEventListener('click', function(e){
+            console.log(e.target.id);
         });
-    
-     
-       
     }
-
 });
