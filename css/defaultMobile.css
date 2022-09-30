@@ -28,8 +28,8 @@ header{
     align-items: center;
     
 }
-.navigation li{
-    width: 20%;
+.navigation a{
+    width: 50%;
     height: 3rem;    
     border: 1px solid navy;
     display: flex;
@@ -37,7 +37,6 @@ header{
     align-items: center;
     color: white;
     background-color: rgba(255,0,0,0.4);
-
     font-family:"quantumregular" ;
 
 
