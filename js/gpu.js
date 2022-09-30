@@ -34,7 +34,7 @@ window.addEventListener('load', function(){
         mapArrayItem = mapArray[i];
         var area = d.getElementById(mapArrayItem.id); 
         // add events per area
-        area.style= ('border:10px; background-color: black; outline: 20px;');
+       
         // console.log(area);
         area.addEventListener('mouseover', function(e){
             for(tekst of tekstenGpu){ // loop through all text
