@@ -7,7 +7,7 @@ var tekst = {} // leeg boek voor de array
 tekst = {
     id          :'gpuChips',
     title       :'GPU Chips',
-    txt         :'De capacitor aan de achterkant van de hoofd GPU chip zorgen voor het filteren van het voltage. Recent is het belangrijk te weten dat zij POSCAPs (Conductive Polymer Tantalum Solid Capacitors) gebruiken, en geen MLCCs (Multilayer Ceramic Chip Capacitor). bij de lancering van de RTX3080 gaf dit problemen en crashes naar de desktop.  '     
+    txt         :'De capacitor aan de achterkant van de hoofd GPU chip zorgen voor het filteren van het voltage. Recent is het belangrijk te weten dat zij POSCAPs (Conductive Polymer Tantalum Solid Capacitors), in groen, gebruiken, en geen MLCCs (Multilayer Ceramic Chip Capacitor),in rood. bij de lancering van de RTX3080 gaf dit problemen en crashes naar de desktop.  '     
     };
     tekstenGpu.push(tekst);
 

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 756px){
+/* @media only screen and (max-width: 756px){ */
 /* 
     MAIN PAGE
 */
@@ -136,6 +136,8 @@ header{
     height: 40vh;
     margin: 20% auto;
     padding: 2px;
+    line-height: 1.5rem;
+    letter-spacing: 0.01rem;
 }
 #gpuInfoText{
     grid-area: txt;
@@ -163,4 +165,4 @@ header{
 }
 
 
-}
+/* } */
