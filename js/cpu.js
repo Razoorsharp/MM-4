@@ -21,9 +21,10 @@ cpuImage = d.getElementById('cpuImage');
     // construct put all queried results of the map tag into an array called mapArray
     const mapArray = Array.from(mapItems);
     // Constructs query for all children of the buttons class
-  
-    // construct put all queried results of thebuttons into an array called buttonArray
-   
+   // Constructs query for all children of the buttons class
+   const buttonItems = d.querySelector('.buttons').children;
+   // construct put all queried results of thebuttons into an array called buttonArray
+   const buttonArray = Array.from(buttonItems);
     
  
     // !! Functionality !!
@@ -56,20 +57,20 @@ cpuImage = d.getElementById('cpuImage');
     // button Loops. 
     // make a loop of all the buttonArray parts and add eventlisteners
     // !! note that .length starts at 1 and array starts at 0. so dont use <= !! 
-    // for(i=0; i < buttonArray.length; i++){
-    //     console.log("started");
-    //     buttonArrayItem = buttonArray[i];
-    //     var button = d.getElementById(buttonArrayItem.id); 
+    for(i=0; i < buttonArray.length; i++){
+       
+        buttonArrayItem = buttonArray[i];
+        var button = d.getElementById(buttonArrayItem.id); 
       
-    //     button.addEventListener('click', function(e){
-    //         for(tekst of tekstenGpu){ // loop through all text
-    //             if(e.target.name == tekst.id){ // find a matching text
-    //                 gpuInfo.textContent = tekst.txt; // put that text in the html tab for showing. 
-    //                 gpuImage.src = "../images/main/"+ e.target.name +".png";
-    //                 gpuInfoImage.innerHTML = "<img src=../images/GpuParts/"+ e.target.name +".png>";
-    //                 console.log(gpuInfoImage);
-    //             }
-    //         }
-    //     });
-    // }
+        button.addEventListener('click', function(e){
+            for(tekst of tekstenCpu){ // loop through all text
+                if(e.target.name == tekst.id){ // find a matching text
+                    cpuInfo.textContent = tekst.txt; // put that text in the html tab for showing. 
+                    cpuImage.src = "../images/main/"+ e.target.name +".png";
+                    cpuInfoImage.innerHTML = "<img src=../images/CpuParts/"+ e.target.name +".png>";
+                    console.log(cpuInfoImage);
+                }
+            }
+        });
+    }
 });
