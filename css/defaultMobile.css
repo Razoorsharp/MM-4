@@ -68,20 +68,20 @@ header{
 #caseAnimated{
     position: absolute;    
     top:0vh;
-    width: 50%; 
-    Left: 0vw;  
+    width:50%; 
+    Left: 2%;  
 }
 #moboAnimated{
     position: absolute;    
     top:0vh;
     width: 37%; 
-    Left: 0vw;  
+    Left: 2%;  
 }
 #cpuAnimated{
     position: absolute;
-    top: 62px;
+    top: 23%;
     width: 10%;
-    Left: 15vw;
+    Left: 16%;
 }
 #cpuAnimated:hover{
   outline: auto; 
@@ -90,9 +90,9 @@ header{
 }
 #gpuAnimated{
     position: absolute;
-    top: 22vh;
+    top: 5%;
     width: 30%;
-    Left: 2vw;
+    Left: 2%;
 }
 #gpuAnimated:hover{
    outline: auto;
