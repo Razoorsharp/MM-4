@@ -74,9 +74,9 @@ tekst = {
     tekstenCpu.push(tekst);
 
 tekst = {
-    id          :'cpuPins',
-    title       :'CPU Pins',
-    txt         :'CPU Pins staat ook omschreven bij de socket, echter is het heel belangrijk te weten waar je hier bij op moet letten. Hou nooit de processor bij de pinnen bvast maar altijd aan de zijkanten en laat deze nooit vallen. De pinnen op een processor zijn uiterst gevoelig o te buigen en breken. Menig bouwer van PC\'s heeft zich al eens in de vingers gesneden de processor verkeerd te hebben geplaatst of vastgepakt waardoor een pinnetje buigt. Hierdoor zal deze onmogelijk nog in de socket passen mits je mat een creditcard of iets duns en hards de pint weer op zijn plek weet te buigen. Wees hier voorzichtig mee want mocht je dit doen en er breekt een pin af, is de proceessor onbruikbaar en vaak is de garantie ook foetsie.    '     
+    id          :'cpuIO',
+    title       :'CPU IO',
+    txt         :'CPU I/O is de brug tussen het geheugen en de cores. Hier zit dan ook de L2 Cache en speelt een grote rol in het geheugen gebruik per core. Deze chip fungeert als hub en Ryzen is een van de eerste die al het geheugen van zowel het moederbord als de processor zelf kan bundelen en beschikbaar stellen voor alle cores. Voorheen had iedere core zijn eigen geheugen allocatie en zat deze niet "gepooled" maar dit is nu wel het geval sinds de ryzen 5000 series. Je zal deze chip tegen komen op iedere processor maar wederom zal je in het gebruik er van en functionaliteit veel verschillen zien per serie en merk zoals AMD of Intel.'     
     };
     tekstenCpu.push(tekst);
 
