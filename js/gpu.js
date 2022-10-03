@@ -8,9 +8,9 @@ window.addEventListener('load', function(){
     // image and part of image
     gpuImage = d.getElementById('gpuImage'); 
     // Text Part of view   
-    gpuInfo = d.getElementById('gpuInfoText');
+    gpuInfo = d.getElementById('infoText');
     // Image part of view
-    gpuInfoImage = d.getElementById('gpuInfoImage');
+    gpuInfoImage = d.getElementById('infoImage');
 
     // Buttons container
     btnGpuChip = d.getElementById('btnGpuChip');

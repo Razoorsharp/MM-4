@@ -1,0 +1,58 @@
+/* 1080 width is standard pixel monitor should suffice for desktops as minimal.  */
+
+@media only screen and (min-width: 1080px){
+
+.buttons{
+    display: none;
+}
+#gpuImage{
+    width: 50vw;
+    margin: 0 auto;
+    top:30%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+#cpuImage{
+    width: 40vw;
+    margin: 0 auto;
+    top:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#information{
+    display: grid;
+    grid-template-areas:
+    'txt'
+    'image';    
+    gap: 10px;
+    background-color: black;
+    width: 80vw;
+    height: 40vh;
+    margin: 3rem auto;
+    padding: 2px;
+    line-height: 1.5rem;
+    letter-spacing: 0.01rem;
+}
+
+#infoText{
+    grid-area: txt;
+    color: white; 
+    font-family: "orbitronlight";   
+}
+
+#infoImage{
+    grid-area: image;
+    max-width:100%;
+    max-height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+}

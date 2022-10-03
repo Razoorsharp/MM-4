@@ -8,9 +8,9 @@ window.addEventListener('load', function(){
     // image and part of image
 cpuImage = d.getElementById('cpuImage'); 
     // Text Part of view   
-    cpuInfo = d.getElementById('cpuInfoText');
+    cpuInfo = d.getElementById('infoText');
     // Image part of view
-    cpuInfoImage = d.getElementById('cpuInfoImage');
+    cpuInfoImage = d.getElementById('infoImage');
 
     // Buttons container
     
@@ -41,9 +41,8 @@ cpuImage = d.getElementById('cpuImage');
             for(tekst of tekstenCpu){ // loop through all text
                 if(e.target.id == tekst.id){ // find a matching text
                     cpuInfo.textContent = tekst.txt; // put that text in the html tab for showing. 
-                    // cpuImage.src = "../images/main/"+ e.target.id +".png";
-                    // cpuInfoImage.innerHTML = "<img src=../images/CpuParts/"+ e.target.id +".png>";
-                    // console.log(gpuInfoImage);
+                    cpuImage.src = "../images/main/"+ e.target.id +".png";
+                   
                 }
             };
         });

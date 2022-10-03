@@ -10,8 +10,8 @@ body{
     background-size: cover;
     position:relative;
     margin: 0 auto;
-    width: 550px;
-    max-width: 550px;
+    width: 90vw;
+    max-width:90vw;
     box-sizing: border-box;
 }
 p{
@@ -115,8 +115,36 @@ header{
  
 
 /* 
-    GPU Page
+    GPU & CPU Page
 */
+
+#information{
+    display: grid;
+    grid-template-areas:
+    'txt txt image';    
+    gap: 10px;
+    background-color: black;
+    width: 80vw;
+    height: 40vh;
+    margin: 3rem auto;
+    padding: 2px;
+    line-height: 1.5rem;
+    letter-spacing: 0.01rem;
+}
+
+#infoText{
+    grid-area: txt;
+    color: white; 
+    font-family: "orbitronlight";   
+}
+
+#infoImage{
+    grid-area: image;
+    max-width:100%;
+    max-height:100%;
+
+}
+
 #gpuImage{
     width: 80vw;
     margin: 0 auto;
@@ -124,36 +152,15 @@ header{
 
 }
 
-#gpuInformation{
-    display: grid;
-    grid-template-areas:
-    'txt txt image';    
-    gap: 10px;
-    background-color: black;
-    width: 80vw;
-    height: 40vh;
-    margin: 20% auto;
-    padding: 2px;
-    line-height: 1.5rem;
-    letter-spacing: 0.01rem;
-}
-#gpuInfoText{
-    grid-area: txt;
-    color: white; 
-    font-family: "orbitronlight";   
-}
-#gpuInfoImage{
-    grid-area: image;
 
-}
-#gpuInfoImage img{
-    max-width:100%;
-    max-height:100%;
-
-}
 .buttons{
-    position: fixed;
-    bottom:5%; 
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem auto;
+    top:5%; 
     left:0; 
     width:100vw;
     display: flex;  
@@ -161,40 +168,27 @@ header{
     align-items: center;
 
 }
+.buttons button{
+      width: 10%;
+      height: 3rem;
+      text-align: center;
+      font-family: "orbitronlight";
+      color: red;
+      background-color: rgb(61, 74, 81);
+
+   
+}
 
 /* CPU */
 #cpuImage{
     width: 80vw;
     margin: 0 auto;
     top:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-#cpuInformation{
-    display: grid;
-    grid-template-areas:
-    'txt txt image';    
-    gap: 10px;
-    background-color: black;
-    width: 80vw;
-    height: 40vh;
-    margin: 20% auto;
-    padding: 2px;
-    line-height: 1.5rem;
-    letter-spacing: 0.01rem;
-}
-#cpuInfoText{
-    grid-area: txt;
-    color: white; 
-    font-family: "orbitronlight";   
-}
-#cpuInfoImage{
-    grid-area: image;
 
-}
-#cpuInfoImage img{
-    max-width:100%;
-    max-height:100%;
-
-}
 /* } */
