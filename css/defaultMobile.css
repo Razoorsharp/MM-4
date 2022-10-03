@@ -22,8 +22,7 @@ header{
     font-size: 0px;
 }
 .navigation{
-    display: flex;
-  
+    display: flex;  
     justify-content: center;
     align-items: center;
     
@@ -163,5 +162,39 @@ header{
 
 }
 
+/* CPU */
+#cpuImage{
+    width: 80vw;
+    margin: 0 auto;
+    top:30%;
 
+}
+
+#cpuInformation{
+    display: grid;
+    grid-template-areas:
+    'txt txt image';    
+    gap: 10px;
+    background-color: black;
+    width: 80vw;
+    height: 40vh;
+    margin: 20% auto;
+    padding: 2px;
+    line-height: 1.5rem;
+    letter-spacing: 0.01rem;
+}
+#cpuInfoText{
+    grid-area: txt;
+    color: white; 
+    font-family: "orbitronlight";   
+}
+#cpuInfoImage{
+    grid-area: image;
+
+}
+#cpuInfoImage img{
+    max-width:100%;
+    max-height:100%;
+
+}
 /* } */
