@@ -41,7 +41,7 @@ window.addEventListener('load', function(){
                 if(e.target.id == tekst.id){ // find a matching text
                     gpuInfo.textContent = tekst.txt; // put that text in the html tab for showing. 
                     gpuImage.src = "../images/main/"+ e.target.id +".png";
-                    gpuInfoImage.innerHTML = "<img src=../images/GpuParts/"+ e.target.id +".png>";
+                    gpuInfoImage.innerHTML = "<img class='infoImageField' src=../images/GpuParts/"+ e.target.id +".png>";
                     console.log(gpuInfoImage);
                 }
             };
@@ -66,7 +66,7 @@ window.addEventListener('load', function(){
                 if(e.target.name == tekst.id){ // find a matching text
                     gpuInfo.textContent = tekst.txt; // put that text in the html tab for showing. 
                     gpuImage.src = "../images/main/"+ e.target.name +".png";
-                    gpuInfoImage.innerHTML = "<img src=../images/GpuParts/"+ e.target.name +".png>";
+                    gpuInfoImage.innerHTML = "<img class='infoImageField' src=../images/GpuParts/"+ e.target.name +".png>";
                     console.log(gpuInfoImage);
                 }
             }

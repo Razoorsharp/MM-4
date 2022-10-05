@@ -91,23 +91,10 @@ window.addEventListener('load', function(){
         }
 
     }
-   
-
-
-
-
 }
     
     // Events
     runAnim();
     mapper();
-    
-  
-
-   
-
-    // 
-
-
 
 });
