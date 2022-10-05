@@ -66,8 +66,6 @@ cpuImage = d.getElementById('cpuImage');
                 if(e.target.name == tekst.id){ // find a matching text
                     cpuInfo.textContent = tekst.txt; // put that text in the html tab for showing. 
                     cpuImage.src = "../images/main/"+ e.target.name +".png";
-                    cpuInfoImage.innerHTML = "<img src=../images/CpuParts/"+ e.target.name +".png>";
-                    console.log(cpuInfoImage);
                 }
             }
         });
