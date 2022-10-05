@@ -41,7 +41,7 @@ header{
 
 }
 .selectionText{
-    position: absolute;
+    position: relative;   
     top: 7%;
     background: black;
     color: white;
@@ -50,60 +50,60 @@ header{
     font-size: 2rem;
     font-family: "quantumregular";
     color: rgb(192, 32, 32);
+    margin: 0 auto;
 
 
 }
 #animation{
     position: relative;
+    object-fit: contain;
     margin: 0 auto;
-    bottom:0vh;
-    Left: 40%;
-    width:100vw;
+    top:5vh;
+    Left: 0%;
+    width:auto;
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     /* overflow: hidden; */
     /* background-image: url("../images/plucked/case.png");
     background-repeat: no-repeat;
     background-size:contain; */
 }
-#caseAnimated{
-    position: absolute;    
-    top:0vh;
-    width:50%; 
-    Left: 2%;  
+#animation img{
+    position: absolute; 
 }
-#moboAnimated{
-    position: absolute;    
-    top:0vh;
-    width: 37%; 
-    Left: 2%;  
+.introButtons{
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    margin: 3rem auto;
+   bottom: 1%;
+    left:0; 
+    width:100vw;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
 }
-#cpuAnimated{
-    position: absolute;
-    top: 23%;
-    width: 10%;
-    Left: 16%;
+.introButtons button{
+      width: 10%;
+      height: 3rem;
+      text-align: center;
+      font-family: "orbitronlight";
+      color: red;
+      background-color: rgb(61, 74, 81);
+
+   
 }
-#cpuAnimated:hover{
-  outline: auto; 
-  border: brown solid 2rem;
-  z-index: 2;
-}
-#gpuAnimated{
-    position: absolute;
-    top: 5%;
-    width: 30%;
-    Left: 2%;
-}
-#gpuAnimated:hover{
-   outline: auto;
-   border: brown solid 2rem;
-   z-index: 2;
-}
+
 .contentMain{
-    position: absolute;
+    position: relative;
     width: 50vw;
-    /* height: 6rem; */
-    bottom: 0%;
+    height: 10rem;
+   
+  
     left: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid white;

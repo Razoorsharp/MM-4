@@ -2,7 +2,12 @@ window.addEventListener('load', function(){
     console.log("started script");
     var d = document;
     //existancy check
-    if(!d.getElementById("cpuAnimated") && !d.getElementById("gpuAnimated")) return false;
+    if(!d.getElementById("cpuAnimated") && !d.getElementById("gpuAnimated")){
+        return false;
+        
+    } else {
+        var noJS = d.getElementById('noJS');
+        noJS.style = "display:none;"; // delete text that requests JS to be run.
 
     // Variables
     var pcCase= d.getElementById('caseAnimated');
@@ -11,11 +16,16 @@ window.addEventListener('load', function(){
     var gpu = d.getElementById('gpuAnimated');
     var cpuText = d.getElementById('homeCPU');
     var gpuText = d.getElementById('homeGPU');
-    var noJS = d.getElementById('noJS');
+    var functionalAnimated = d.getElementById('functionalAnimated');
+    
+    var selection = d.getElementById("selection");
+    functionalAnimated.style = ("display:none;");
+    var animationPlaying = true; // set true or false so it will only run if the animation stopped playing
+    
     var transit = true;
 
     //add text nodes
-    noJS.style = "display:none;"; // delete text that requests JS to be run.
+   
     
     // Adding the 2 P elements to the information block for CPU and GPU
     cpuText.innerHTML = '<p>The CPU is the working horse of every day tasks in a computer. It manages every click and every piece of logic the computer needs to handle. When things need calculations or images need to be sent to the GPU for display, everything is done by the CPU. If It was a football match it would be the coach and referee.</p>';
@@ -27,29 +37,74 @@ window.addEventListener('load', function(){
 
     //Functions
     function runAnim(){
-        let array = [pcCase, mobo, cpu, gpu];    
-        for(part of array){
-            console.log(part.style);
-            
-            let leftVal = parseInt(part.style.left); 
-            console.log(leftVal);
-            for(i=0; leftVal < 200; i++){
-                setTimeout('', 10);
-                this.style.left = leftVal + "px";
-        }      
+        // let array = [pcCase, mobo, cpu, gpu];   
+        
+        let tl = gsap.timeline({repeat: 0, yoyo: false})
 
-        }
+            tl.from(pcCase, { x: -1500});
+            tl.from(mobo, { x: -1500});
+            tl.from(cpu, { x: -1500});
+            tl.from(gpu, { x: -1500});
+            tl.call(function(){
+                mobo.style = "display:none;"; 
+                pcCase.style = "display:none;";
+                cpu.style = "display:none;";
+                gpu.style = "display:none;";
+                functionalAnimated.style="display:block;"; 
+                functionalAnimated.src="images/intro/caseUnselected.png";
+                animationPlaying = false;
+            });
+            tl.call(function(){mapper();});
     }
 
+    function mapper(){
+        if(animationPlaying == true){
+            return false;
+        }else{
+            const mapItems = d.querySelector("#buttons").children;
+            // construct put all queried results of the map tag into an array called mapArray
+            const mapArray = Array.from(mapItems);
 
-    
+            for(btn of mapArray){
+                btn.addEventListener("mouseover", function(e){  
+                    if(e.target.name == "cpu"){
+                        cpuText.style = "display:block;";
+                    }else if(e.target.name == "gpu"){
+                        gpuText.style = "display:block;";
+                    }                                 
+                    functionalAnimated.src="images/intro/case"+ e.target.name + ".png";
+                });
+                
+                btn.addEventListener("click", function(e){ 
+                    e.preventDefault();  
+                    if(e.target.name == "cpu"){
+                        cpuText.style = "display:block;";
+                    }else if(e.target.name == "gpu"){
+                        gpuText.style = "display:block;";
+                    }                
+                    functionalAnimated.src="images/intro/caseUnselected.png";
+                    window.open("paginas/"+ e.target.name + ".html")
+
+                });
+               
+            }
+        }
+
+    }
+   
+
+
+
+
+}
     
     // Events
     runAnim();
+    mapper();
+    
+  
 
-    gpu.addEventListener('click', function(e){
-        window.open('paginas/gpu.html', '_self');
-    });
+   
 
     // 
 
