@@ -92,18 +92,19 @@ header{
       color: red;
       background-color: rgb(61, 74, 81);   
 }
-.contentMain{
+.contentMain {
     position: relative;
-    width: 50vw;
+    width: 69vw;
     height: 10rem;
     left: 50%;
     transform: translate(-50%, 0%);
     border: 1px solid white;
     background-color: black;
     color: white;
-    overflow: hidden;  
-    padding: 1rem; 
-}
+    overflow: hidden;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
 
 /* 
     GPU & CPU Page

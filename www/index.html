@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>C to G</title>
+</head>
+<body>
+    <header>
+        <h1>
+           Welcome to the CPU and GPU tutorial. 
+        </h1>
+    </header>
+    <section>
+        <h2 class="selectionText">Please select the CPU or GPU to know more.             
+        </h2>
+    </section>
+    <section id='animation'>
+        
+        <img id="functionalAnimated" src="images/intro/caseUnselected.png" alt="case with components"  >
+        <img id="caseAnimated" src="images/intro/case.png" alt="Computer case">
+        <img id="moboAnimated" src="images/intro/mobo.png" alt="Motherboard">
+        <img  id="cpuAnimated" src="images/intro/cpu.png"  alt="Ryzen">
+        <img  id="gpuAnimated" src="images/intro/gpu.png"  alt="GPU">        
+    </section>
+    <section class="introButtons" id="buttons">
+        <button id="gpuBtn" name="gpu">GPU</button>
+        <button id="cpuBtn" name="cpu">CPU</button>
+
+    </section>
+
+    <section class="contentMain" id="homeContent">
+       
+            <div class="cpu" id="homeCPU"></div>
+            <p id="noJS"> Please Enable Javascript to enjoy the full functionality of this page.</p>
+            <div class="gpu" id="homeGPU"></div>
+            
+      
+    </section>
+   <footer>
+
+   </footer>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+<script src="js/intro.js"></script>
+</html>

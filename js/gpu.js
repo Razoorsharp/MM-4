@@ -15,7 +15,7 @@ window.addEventListener('load', function(){
     // Buttons container
     btnGpuChip = d.getElementById('btnGpuChip');
     
-   // !! CONSTRUCTORS !! 
+   // !! CONSTRUCTORS (Kind of) !! 
     // Constructs query for all children of the map tag
     const mapItems = d.querySelector('map').children;
     // construct put all queried results of the map tag into an array called mapArray

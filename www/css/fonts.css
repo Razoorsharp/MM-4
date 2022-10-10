@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'quantumregular';
+    src: 
+         url('../fonts/quantum-webfont.woff2') format('woff2'),
+         url('../fonts/quantum-webfont.woff2') format('woff2'),
+         url('../fonts/quantum-webfont.woff') format('woff');
+         
+    font-weight: normal;
+    font-style: normal;
+/* licensed for personal use through via https://sesohq.sellfy.store/ */
+}
+@font-face {
+    font-family: 'orbitronlight';
+    src: url('../fonts/orbitron-light-webfont.eot');
+    src: url('../fonts/orbitron-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/orbitron-light-webfont.woff2') format('woff2'),
+         url('../fonts/orbitron-light-webfont.woff') format('woff'),
+         url('../fonts/orbitron-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+/* Font originated from https://www.fontsquirrel.com/fonts/Orbitron */
+}
