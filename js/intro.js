@@ -40,7 +40,7 @@ window.addEventListener('load', function(){
 
     //Functions
     function runAnim(){
-        // let array = [pcCase, mobo, cpu, gpu];   
+      
         // GSAP animation
         let tl = gsap.timeline({repeat: 0, yoyo: false})
 

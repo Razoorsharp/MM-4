@@ -15,7 +15,7 @@ cpuImage = d.getElementById('cpuImage');
     // Buttons container
     
     
-   // !! CONSTRUCTORS !! 
+   // !! CONSTRUCTORS (kind of)!! 
     // Constructs query for all children of the map tag
     const mapItems = d.querySelector('map').children;
     // construct put all queried results of the map tag into an array called mapArray
