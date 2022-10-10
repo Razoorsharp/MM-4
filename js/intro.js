@@ -83,7 +83,7 @@ window.addEventListener('load', function(){
                     }else if(e.target.name == "gpu"){
                         gpuText.style = "display:none;";
                     }                                 
-                    functionalAnimated.src="images/intro/case"+ e.target.name + ".png";
+                    functionalAnimated.src="images/intro/caseUnselected.png";
                 });
                 
                 btn.addEventListener("click", function(e){ 
@@ -97,11 +97,11 @@ window.addEventListener('load', function(){
                     window.open("paginas/"+ e.target.name + ".html")
 
                 });
-                btn.addEventListener("touch", function(e){ 
+                btn.addEventListener("touchstart", function(e){ 
                     e.preventDefault();  
                     if(e.target.name == "cpu"){
                         //if the cpu button is not pressed show info, if pressed open new window
-                        if(!cpuTouched){
+                        if(cpuTouched = false){
                             gpuTouched = false;
                             gpuText.style = "display:none;";
                             cpuTouched = true;
@@ -112,7 +112,7 @@ window.addEventListener('load', function(){
                         } // end touched check
                         
                     }else if(e.target.name == "gpu"){
-                        if(!gpuTouched){
+                        if(gpuTouched = false){
                             cpuTouched = false;
                             cpuText.style = "display:none;";
                             gpuTouched = true;
