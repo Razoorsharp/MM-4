@@ -41,7 +41,7 @@ window.addEventListener('load', function(){
     //Functions
     function runAnim(){
         // let array = [pcCase, mobo, cpu, gpu];   
-        
+        // GSAP animation
         let tl = gsap.timeline({repeat: 0, yoyo: false})
 
             tl.from(pcCase, { x: -1500});
@@ -59,6 +59,7 @@ window.addEventListener('load', function(){
             });
             tl.call(function(){mapper();});
     }
+    // end gsap animation
 
     function mapper(){
         if(animationPlaying == true){
@@ -67,7 +68,7 @@ window.addEventListener('load', function(){
             const mapItems = d.querySelector("#buttons").children;
             // construct put all queried results of the map tag into an array called mapArray
             const mapArray = Array.from(mapItems);
-
+            // for the buttons it check which button it is and displays blocks of text accordingly. 
             for(btn of mapArray){
                 btn.addEventListener("mouseover", function(e){  
                     if(e.target.name == "cpu"){
@@ -97,6 +98,9 @@ window.addEventListener('load', function(){
                     window.open("paginas/"+ e.target.name + ".html")
 
                 });
+                // Attempt to make a touch functionality for mobile so the buton is pressed once and it will 
+                // show the text, pressed twice it goes to the page. 
+                // could not finish this one  but will leave the code in for review.. Maybe i can get some pointers. 
                 btn.addEventListener("touchstart", function(e){ 
                     e.preventDefault();  
                     if(e.target.name == "cpu"){
@@ -108,8 +112,9 @@ window.addEventListener('load', function(){
                             cpuText.style = "display:block;";
                         }else{
                             functionalAnimated.src="images/intro/caseUnselected.png";
+                            cpuTouched = false;
                     window.open("paginas/"+ e.target.name + ".html")
-                        } // end touched check
+                        } 
                         
                     }else if(e.target.name == "gpu"){
                         if(gpuTouched = false){
@@ -119,15 +124,15 @@ window.addEventListener('load', function(){
                             gpuText.style = "display:block;";
                         }else{
                             functionalAnimated.src="images/intro/caseUnselected.png";
+                            gpuTouched = false;
                     window.open("paginas/"+ e.target.name + ".html")
-                        } // end touched check
+                        } 
                     }  
                     
 
-                    // functionalAnimated.src="images/intro/caseUnselected.png";
-                    // window.open("paginas/"+ e.target.name + ".html")
+                 
 
-                });
+                });// end touched check
                
             }
         }

@@ -146,8 +146,7 @@ header{
 
 #infoImage{
     grid-area: image;
-    /* max-width: 70%; */
-    /* max-height: 50%; */
+   
     object-fit: cover;
 }
 .infoImageField{
@@ -163,13 +162,12 @@ header{
 }
 
 
-.buttons{
-    position: sticky;
+.buttons{    
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    margin: 3rem auto;
+    gap: 1rem;
+    margin: 2rem auto;
     top:5%; 
     left:0; 
     width:100vw;
@@ -179,7 +177,7 @@ header{
 
 }
 .buttons button{
-      width: 10%;
+      min-width: 10%;
       height: 3rem;
       text-align: center;
       font-family: "orbitronlight";
@@ -201,4 +199,3 @@ header{
 }
 
 
-/* } */
